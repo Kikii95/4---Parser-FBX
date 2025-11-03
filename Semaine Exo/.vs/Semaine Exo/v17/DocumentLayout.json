@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4DC9D4F-C53D-4164-931A-155572A59BD6}|Semaine Exo\\Semaine Exo.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Jour1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A4DC9D4F-C53D-4164-931A-155572A59BD6}|Semaine Exo\\Semaine Exo.vcxproj|solutionrelative:Semaine Exo\\Jour1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Jour1.cpp",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Jour1.cpp",
+              "RelativeDocumentMoniker": "Semaine Exo\\Jour1.cpp",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Jour1.cpp",
+              "RelativeToolTip": "Semaine Exo\\Jour1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-03T07:50:24.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
