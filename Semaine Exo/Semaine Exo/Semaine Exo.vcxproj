@@ -123,11 +123,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Jour1.cpp" />
+    <ClCompile Include="Jour1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Tokenizer.cpp" />
+    <ClCompile Include="ObjParser.cpp" />
+    <ClCompile Include="TestObjParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tokenizer.h" />
+    <ClInclude Include="ObjData.h" />
+    <ClInclude Include="ObjParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cube.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

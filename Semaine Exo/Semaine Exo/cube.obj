@@ -1,0 +1,53 @@
+# Cube simple pour tester le parser OBJ
+# 8 vertices, 6 normales, 12 triangles (6 faces * 2 triangles)
+
+o Cube
+
+# Vertices geometriques (8 coins du cube)
+v -1.0 -1.0  1.0
+v  1.0 -1.0  1.0
+v  1.0  1.0  1.0
+v -1.0  1.0  1.0
+v -1.0 -1.0 -1.0
+v  1.0 -1.0 -1.0
+v  1.0  1.0 -1.0
+v -1.0  1.0 -1.0
+
+# Coordonnees de texture
+vt 0.0 0.0
+vt 1.0 0.0
+vt 1.0 1.0
+vt 0.0 1.0
+
+# Normales
+vn  0.0  0.0  1.0   # Face avant
+vn  0.0  0.0 -1.0   # Face arriere
+vn  1.0  0.0  0.0   # Face droite
+vn -1.0  0.0  0.0   # Face gauche
+vn  0.0  1.0  0.0   # Face haut
+vn  0.0 -1.0  0.0   # Face bas
+
+# Faces (format: v/vt/vn)
+# Face avant
+f 1/1/1 2/2/1 3/3/1
+f 1/1/1 3/3/1 4/4/1
+
+# Face arriere
+f 6/1/2 5/2/2 8/3/2
+f 6/1/2 8/3/2 7/4/2
+
+# Face droite
+f 2/1/3 6/2/3 7/3/3
+f 2/1/3 7/3/3 3/4/3
+
+# Face gauche
+f 5/1/4 1/2/4 4/3/4
+f 5/1/4 4/3/4 8/4/4
+
+# Face haut
+f 4/1/5 3/2/5 7/3/5
+f 4/1/5 7/3/5 8/4/5
+
+# Face bas
+f 5/1/6 6/2/6 2/3/6
+f 5/1/6 2/3/6 1/4/6

@@ -1,0 +1,33 @@
+# Fichier de test pour differents formats de faces OBJ
+
+o TestFormats
+
+# Vertices
+v 0.0 0.0 0.0
+v 1.0 0.0 0.0
+v 1.0 1.0 0.0
+v 0.0 1.0 0.0
+
+# Coordonnees de texture
+vt 0.0 0.0
+vt 1.0 0.0
+vt 1.0 1.0
+vt 0.0 1.0
+
+# Normales
+vn 0.0 0.0 1.0
+
+# Test 1: Faces avec vertices seulement (f v1 v2 v3)
+f 1 2 3
+
+# Test 2: Faces avec vertices + textures (f v1/vt1 v2/vt2 v3/vt3)
+f 1/1 2/2 3/3
+
+# Test 3: Faces avec vertices + normales (f v1//vn1 v2//vn2 v3//vn3)
+f 1//1 2//1 3//1
+
+# Test 4: Faces completes (f v1/vt1/vn1 v2/vt2/vn2 v3/vt3/vn3)
+f 1/1/1 2/2/1 3/3/1
+
+# Test 5: Quad (4 vertices)
+f 1/1/1 2/2/1 3/3/1 4/4/1
