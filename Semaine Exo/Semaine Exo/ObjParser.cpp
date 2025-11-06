@@ -4,6 +4,7 @@
 
 ObjParser::ObjParser() : m_lastError("") {}
 
+bool ObjParser::parse(const std::string& filePath, ObjData& outData) {
     std::ifstream file(filePath);
     if (!file.is_open()) {
         m_lastError = "Impossible d'ouvrir le fichier: " + filePath;
