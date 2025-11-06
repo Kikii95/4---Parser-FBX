@@ -16,6 +16,7 @@ static std::string readFileOrEmpty(const std::string& path) {
 static const char* tokenTypeName(Tokenizer::TokenType t) {
     switch (t) {
     case Tokenizer::Invalid:     return "Invalid";
+    case Tokenizer::String:      return "String";
     case Tokenizer::Colon:       return "Colon";
     case Tokenizer::ParenOpen:   return "ParenOpen";
     case Tokenizer::ParenClose:  return "ParenClose";
@@ -23,8 +24,26 @@ static const char* tokenTypeName(Tokenizer::TokenType t) {
     case Tokenizer::BrackClose:  return "BrackClose";
     case Tokenizer::Slash:       return "Slash";
     case Tokenizer::UnSlash:     return "UnSlash";
+    case Tokenizer::Quote:       return "Quote";
     case Tokenizer::Comma:       return "Comma";
     default:                     return "Unknown";
+    }
+}
+
+static void printSegment(const Tokenizer::Segment& seg, const std::vector<Tokenizer::Token>& tokens, int depth = 0) {
+    std::string indent(depth * 2, ' ');
+    std::cout << indent << "- Segment (";
+    std::cout << tokenTypeName(seg.kindOpen) << " -> " << tokenTypeName(seg.kindClose) << ")";
+    std::cout << " [tokens " << seg.startIndexTok << " a " << seg.endIndexTok << "]\n";
+
+    std::string text;
+    for (size_t i = seg.startIndexTok; i <= seg.endIndexTok && i < tokens.size(); ++i) {
+        text += tokens[i].value + " ";
+    }
+    std::cout << indent << "  Contenu : \"" << text << "\"\n";
+
+    for (const auto& child : seg.children) {
+        printSegment(child, tokens, depth + 1);
     }
 }
 
@@ -45,18 +64,31 @@ int main(int argc, char** argv) {
         { fiou: bar, / test }
         blob: /, {hello}, \truc\, (je cite "supercalifragilistique")
     )";
-        std::cout << "=== Demo (aucun fichier) ===\n";
+        std::cout << "=== Demo integree (aucun fichier passe en argument) ===\n";
     }
 
     Tokenizer tz;
-    std::vector<Tokenizer::Token> tokens = tz.tokenize(source);
 
-    std::cout << "=== Resultat du lexing ===\n";
-    for (const auto& tok : tokens) {
-        std::cout << "Value: \"" << tok.value << "\""
-            << "   Type: " << tokenTypeName(tok.type) << "\n";
+    auto tokens = tz.tokenize(source);
+
+    std::cout << "\n=== TOKENS ===\n";
+    for (size_t i = 0; i < tokens.size(); ++i) {
+        std::cout << i << ": \"" << tokens[i].value << "\""
+            << "  -> " << tokenTypeName(tokens[i].type) << "\n";
     }
-    std::cout << "==========================\n";
 
+    auto segments = tz.segmentize(tokens);
+
+    std::cout << "\n=== SEGMENTS ===\n";
+    if (segments.empty()) {
+        std::cout << "(aucun segment trouve)\n";
+    }
+    else {
+        for (const auto& seg : segments) {
+            printSegment(seg, tokens);
+        }
+    }
+
+    std::cout << "\n==========================\n";
     return 0;
 }

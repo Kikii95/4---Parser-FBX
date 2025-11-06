@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A4DC9D4F-C53D-4164-931A-155572A59BD6}|Semaine Exo\\Semaine Exo.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Jour1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A4DC9D4F-C53D-4164-931A-155572A59BD6}|Semaine Exo\\Semaine Exo.vcxproj|solutionrelative:Semaine Exo\\Jour1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A4DC9D4F-C53D-4164-931A-155572A59BD6}|Semaine Exo\\Semaine Exo.vcxproj|C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Tokenizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A4DC9D4F-C53D-4164-931A-155572A59BD6}|Semaine Exo\\Semaine Exo.vcxproj|solutionrelative:Semaine Exo\\Tokenizer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,9 +28,9 @@
               "RelativeDocumentMoniker": "Semaine Exo\\Tokenizer.cpp",
               "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Tokenizer.cpp",
               "RelativeToolTip": "Semaine Exo\\Tokenizer.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-03T08:16:17.486Z",
+              "WhenOpened": "2025-11-06T09:04:19.043Z",
               "EditorCaption": ""
             },
             {
@@ -45,28 +41,9 @@
               "RelativeDocumentMoniker": "Semaine Exo\\Jour1.cpp",
               "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Jour1.cpp",
               "RelativeToolTip": "Semaine Exo\\Jour1.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-03T07:50:24.755Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 147,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tokenizer.h",
-              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Tokenizer.h",
-              "RelativeDocumentMoniker": "Semaine Exo\\Tokenizer.h",
-              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\4---Parser-FBX\\Semaine Exo\\Semaine Exo\\Tokenizer.h",
-              "RelativeToolTip": "Semaine Exo\\Tokenizer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-03T08:03:48.52Z",
+              "WhenOpened": "2025-11-06T09:04:13.393Z",
               "EditorCaption": ""
             }
           ]
